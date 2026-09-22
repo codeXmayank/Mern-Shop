@@ -29,7 +29,7 @@ server.use(
   cors({
     credentials: true,
     exposedHeaders: ["X-Total-Count"],
-    origin: process.env.ORIGIN || "http://localhost:3000",
+    origin: "https://mernshop-frontend-self.vercel.app",
     methods: ["GET", "POST", "PATCH", "DELETE"],
   }),
 );
