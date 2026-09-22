@@ -163,4 +163,4 @@ frontend/   React application, Redux slices, pages, and reusable components
 
 ## Author
 
-[Rishi Bakshii](https://github.com/RishiBakshii)
+[Mayank Kumar](https://github.com/codeXmayank)

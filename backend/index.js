@@ -66,6 +66,10 @@ server.get("/database", (req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`server [STARTED] ~ ${PORT}`);
-});
+if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
+  server.listen(PORT, () => {
+    console.log(`server [STARTED] ~ ${PORT}`);
+  });
+}
+
+module.exports = server;
